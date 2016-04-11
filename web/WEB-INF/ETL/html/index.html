@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Blueprint CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse" >
+    <div class="container">
+        <a id="logo" href="/">社保大数据业务平台</a>
+        <nav>
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="https://rubytutorial-jungieve.c9users.io/">主页</a></li>
+                <li><a href="https://rubytutorial-jungieve.c9users.io/help">帮助</a></li>
+                <li><a href="http://jungieve.wicp.net:20794/ETL/index.html">预处理</a></li>
+                <li><a href="http://jungieve.wicp.net:20794/">OLAP分析</a></li>
+                <li><a href="http://jungieve.wicp.net:20794/openreports/">报表展示</a></li>
+                <li><a href="https://rubytutorial-jungieve.c9users.io/users">其他成员</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">账户</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="jumbotron">
+<div class="container">
+
+    <div class="page-header">
+        <p align="center"><b>社保数据预处理 </b></p>
+        <p class="lead">本模块基于开源预处理工具Kettle实现，通过定制的数据处理流程实现社保数据抽取、转换和加载的预处理操作。用户可通过上传原始数据文件或配置数据库连接为数据抽取提供数据源，成功后即可启动数据预处理操作，服务器将处理完成后的数据同步导入数据仓库。</p>
+    </div>
+
+
+
+        <table class="table table-condensed">
+            <thead>
+            <tr>
+                <th>数据</th>
+                <th>状态 </th>
+                <th>上传</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+        </table>
+        <div class="col-md-3">参保人基础信息表</div>
+        <div class="col-md-3">ETL处理成功
+            <span  class="label label-success">成功</span>
+        </div>
+        <div class="col-md-3">C:\kettle\job\ac01.job</div>
+        <div class="col-md-3">无</div>
+        <div class="row1">
+            <div class="col-md-3">单位基本信息表</div>
+            <div class="col-md-3">ETL处理失败
+                <span class="label label-danger">失败</span>
+            </div>
+            <div class="col-md-3">C:\kettle\job\ab01.job
+                <a href="#">重试 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row2">
+            <div class="col-md-3">单位险种表</div>
+            <div class="col-md-3">ETL正在处理
+                <span class="label label-warning">等待</span>
+            </div>
+            <div class="col-md-3">C:\kettle\job\ab02.job</div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row3">
+            <div class="col-md-3">险种表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row4">
+            <div class="col-md-3">个人缴费基数信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row5">
+            <div class="col-md-3">个人五险缴费信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row6">
+            <div class="col-md-3">养老保险年账户表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row7">
+            <div class="col-md-3">养老保险基本信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row8">
+            <div class="col-md-3">离退休人员待遇信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row9">
+            <div class="col-md-3">养老保险待遇支付信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row10">
+            <div class="col-md-3">养老保险月账户表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row11">
+            <div class="col-md-3">个人失业保险发放信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row12">
+            <div class="col-md-3">个人失业保险基本信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row13">
+            <div class="col-md-3">失业人员待遇支付明细表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row14">
+            <div class="col-md-3">医疗机构信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row15">
+            <div class="col-md-3">医疗保险个人帐户信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+        <div class="row16">
+            <div class="col-md-3">个人医疗保险支付信息表</div>
+            <div class="col-md-3">数据未上传
+                <span class="label label-default">未处理</span>
+            </div>
+            <div class="col-md-3"><a href="#">上传 </a></div>
+            <div class="col-md-3"><a href="#">启动预处理</a></div>
+        </div>
+
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
