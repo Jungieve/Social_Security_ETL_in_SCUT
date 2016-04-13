@@ -18,6 +18,7 @@
 - 数据库文件在/web/resources/etl.sql
 - 本地新建一个mysql的数据库命名为etl，把etl.sql导入即可
 - 如果采用idea，hibernate包可以自动下载，如果其他ide，自己手动配置hibernate3.6.9
+
 ###项目目标
 - 实现数据读取 前后台交互
 - 维护各个子模块的统一性
