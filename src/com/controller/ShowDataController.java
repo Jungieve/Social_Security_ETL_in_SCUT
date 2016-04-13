@@ -1,6 +1,5 @@
-package com;
+package com.controller;
 
-import com.util.RunJobImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(value = "/job")
-public class hello {
+public class ShowDataController {
 
     @ResponseBody
     @RequestMapping(method= RequestMethod.GET)
@@ -20,7 +19,6 @@ public class hello {
     {
 
         System.out.println("Hello");
-        RunJobImpl.runJob("C:\\kettle\\job\\ab02job.kjb");
         return "a";
     }
 }

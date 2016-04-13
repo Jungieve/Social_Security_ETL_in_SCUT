@@ -1,5 +1,6 @@
-package com.util;
+package com.service.impl;
 
+import com.service.RunJob;
 import org.pentaho.di.core.KettleEnvironment;
 import org.pentaho.di.core.Result;
 import org.pentaho.di.core.exception.KettleException;
@@ -13,8 +14,8 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class RunJobImpl  {
-    public static String runJob(String filename) {
+public class RunJobImpl implements RunJob{
+    public String runJob(String filename) {
         try {
             //StepLoader.init();  // 3.2以前版本
             KettleEnvironment.init();
@@ -50,7 +51,7 @@ public class RunJobImpl  {
         return null;
     }
 
-    public static void runTransformation(String filename) {
+    public void runTransformation(String filename) {
         try {
             //StepLoader.init();  // 3.2以前版本
             KettleEnvironment.init();
